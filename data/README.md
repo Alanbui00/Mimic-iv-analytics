@@ -86,20 +86,21 @@ Important columns include:
 This table is joined to diagnoses_icd.csv using both icd_code and icd_version.
 
 ## Data Relationships
-
-Patients\
-  |\
-  | suject_id\
-  v\
-admissions\
-  |\
-  | hadm_id\
-  v\
-diagnoses_icd\
-  |\
-  | icd_code and icd_version\
-  v\
-d_icd_diagnoses
+```text
+  Patients
+    |
+    | suject_id
+    v
+  admissions
+    |
+    | hadm_id
+    v
+  diagnoses_icd
+    |
+    | icd_code and icd_version
+    v
+  d_icd_diagnoses
+```
 
 The relationships are:
 
